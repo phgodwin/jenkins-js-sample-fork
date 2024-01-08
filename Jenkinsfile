@@ -18,6 +18,7 @@ pipeline {
         }
     }
     post {
-       always {} 
+       always {archiveArtifacts artifacts: '*.tgz', followSymlinks: false
+       } 
     }
 }
